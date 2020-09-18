@@ -1,5 +1,5 @@
 .home-container {
-    margin-top: 75px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
   }
@@ -22,7 +22,7 @@
   .home-actions {
     display: flex;
     height: 70px;
-    margin-top: 75px;
+    margin-top: 150px;
   }
   
   .home-btn {
