@@ -58,7 +58,7 @@ const CreateRecord = () => {
     axios.get(`${BASE_URL}/games`)
       .then(response => {
         const selectValue = mapSelectValues(response.data);
-        console.log(selectValue);
+        //console.log(selectValue);
         setAllGames(selectValue);
       })
       .catch(() => Alert.alert('Erro ao listar os jogos!'))
@@ -130,7 +130,7 @@ const CreateRecord = () => {
 }
 
 const pickerSelectStyles = StyleSheet.create({
-    inputIOS: {
+  inputAndroid: {
       fontSize: 16,
       paddingVertical: 12,
       paddingHorizontal: 20,
@@ -141,7 +141,7 @@ const pickerSelectStyles = StyleSheet.create({
       fontFamily: "Play_700Bold",
       height: 50
     },
-    inputAndroid: {
+    inputIOS: {
       fontSize: 16,
       paddingVertical: 12,
       paddingHorizontal: 20,
@@ -155,12 +155,12 @@ const pickerSelectStyles = StyleSheet.create({
     placeholder: {
       color: '#9E9E9E',
       fontSize: 16,
-      fontFamily: "Play_700Bold",
+      fontFamily: "Play_700Bold"
     },
     iconContainer: {
       top: 10,
-      right: 12,
-    }
+      right: 12
+    },
   });
 
 const styles = StyleSheet.create({
